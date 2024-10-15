@@ -1,0 +1,37 @@
+================================================================================
+
+                                CHANNEL LOG FILE
+
+================================================================================
+
+Date:       2024-10-15
+Author:     mc
+Version:    1.0
+Description:
+-  https://github.com/mmclinton/nix
+-  This log records all channel activities, updates, and significant changes for 
+    reference and auditing.
+
+Key:
+-  COMMIT    : General commit information message
+-  INITIAL : Initial commit
+
+START OF LOG ENTRIES
+--------------------------------------------------
+
+1892 - COMMIT
+    2024-10-15:
+        I moved the flake.nix and flake.lock to the root of the repository. I 
+        was unable to rebuild remotely using those files in the nixos directory.
+        I also added this channelog. I modified the README.md to see if I was 
+        able to rebuild if the branch was dirty. I think I was, but faced a 
+        significant problem when trying to rebuild after moving the flake files.
+        This commit will test if I am able to rebuild after pushing a commit.
+
+163 - INITIAL
+    2024-10-15:
+        The initial commit for this nix repository. The aim of this
+        repository is to aggregate my nix-related configurations into a unified
+        structure. I will continue to alter, fix, and build upon these 
+        configurations. This is the channelog of such efforts. This commit only
+        contained the initial README.md and LICENSE files.
