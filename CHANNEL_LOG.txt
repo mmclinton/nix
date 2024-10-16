@@ -19,6 +19,11 @@ Key:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+3621 - COMMIT
+    2024-10-15:
+        I altered the flake.nix 'nixosConfiguration' attribute to be more 
+        accommodating for adding future keys like "laptop" or "macos". 
+
 1892 - COMMIT
     2024-10-15:
         I moved the flake.nix and flake.lock to the root of the repository. I 
