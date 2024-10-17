@@ -19,6 +19,14 @@ Key:
 
 START OF LOG ENTRIES
 --------------------------------------------------
+8808 - COMMIT
+    2024-10-17:
+        I removed the file nixos/modules/programs/fish.nix to a newly created 
+        directory, nixos/modules/dotfiles. As the directory's name suggest, this
+        is a where I will place my dotfiles. Since the fish.nix now contains my
+        personal configuration from config.fish, I moved the file to a more 
+        appropriate directory. Previously it only contained nix related program
+        option. If this builds correctly, I will slowly migrate other dotfiles.
 
 7079 - COMMIT
     2024-10-17:

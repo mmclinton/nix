@@ -1,11 +1,16 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./modules/dotfiles/fish.nix
+  ];
+
+
   nixpkgs.config.allowUnfree = true;
 
   home.username = "mc";
   home.homeDirectory = "/home/mc";
-  home.stateVersion = "24.05"; # Please read the comment before changing.
+  home.stateVersion = "24.05"; 
   home.packages = with pkgs; [
     brave 
     discord

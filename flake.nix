@@ -22,10 +22,10 @@
           ./nixos/modules/fonts.nix
           ./nixos/modules/locale.nix
           ./nixos/modules/system-packages.nix
+          ./nixos/modules/dotfiles/fish.nix
           ./nixos/modules/hardware/audio.nix
           ./nixos/modules/hardware/networking.nix
           ./nixos/modules/programs/bash.nix
-          ./nixos/modules/programs/fish.nix
           ./nixos/modules/programs/neovim.nix
           ./nixos/modules/programs/programs-enable.nix
           ./nixos/modules/services/avahi.nix
