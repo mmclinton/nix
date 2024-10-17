@@ -2,7 +2,6 @@
 
 {
   programs.fish = {
-    enable = true;
     shellAliases = {
       temp-browser = "nix-shell -p chromium";
       l = "ls -alh";
@@ -12,6 +11,7 @@
       miller = "mlr --csv --opprint --barred head -n 5";
       nv = "nvim";
       quick-python = "nix-shell -p python311Packages.{ipython, polars}";
+    }; # <-- Closing brace for shellAliases
 
     shellInit = ''
       if status is-interactive
@@ -33,6 +33,6 @@
 
       end
     '';
-    }; 
   };
 }
+

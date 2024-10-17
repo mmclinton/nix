@@ -5,7 +5,6 @@
     ./modules/dotfiles/fish.nix
   ];
 
-
   nixpkgs.config.allowUnfree = true;
 
   home.username = "mc";

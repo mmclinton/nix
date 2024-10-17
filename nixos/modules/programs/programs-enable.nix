@@ -2,6 +2,7 @@
 
 {
   programs = {
+    fish.enable = true;
     noisetorch.enable = true;
   };
 }

@@ -19,6 +19,34 @@ Key:
 
 START OF LOG ENTRIES
 --------------------------------------------------
+
+10537 - NOTE
+    2024-10-17:
+        I finally got the home.nix to import and use the dotfiles/fish.nix file.
+        That said, there was an error when building due to the order of
+        operations of execution. It warned me that programs.fish.enable was not
+        set to true and that the user's shell was set to fish. In reality, the 
+        fish.nix does have that option set to true, but it appears the fish 
+        config was not being read until after Nixos wanted to establish my shell
+        as fish. I could not immediately think of a fix. That said, I moved the
+        one-liner enable option from the fish.nix file to 
+        programs/programs-enable where all my one-liners live. That worked.
+
+8808 - NOTE
+    2024-10-17:
+        There was an error rebuilding from home-manager. I am not sure yet how 
+        to resolve. Here is a peak at the error: 
+            home-manager-mc.service: Main process exited, code=exited, status=1/
+            FAILURE
+            home-manager-mc.service: Failed with result 'exit-code'.
+            Failed to start Home Manager environment for mc.
+
+        How I fixed it, at least temporarily, is by removing the home-manager 
+        import of the fish.nix file and adding the import to the long list in 
+        the flake.nix file. The conflict was gone and the system rebuilt 
+        successfully. This, at least to me, seems incorrect. It makes more sense
+        to have personally configuration imported by home-manager. 
+
 8808 - COMMIT
     2024-10-17:
         I removed the file nixos/modules/programs/fish.nix to a newly created 
