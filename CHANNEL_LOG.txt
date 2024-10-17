@@ -19,6 +19,14 @@ Key:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+5350 - COMMIT
+    2024-10-17:
+        I am testing home-manager by adding rust and cargo as a package within
+        to see if it builds properly. If it does, I will move the home packages
+        from the original configuration file to the home-manager. Running nix 
+        check on my flake returns no error, but I have yet to build up the trust
+        for that yet.
+
 3621 - COMMIT
     2024-10-15:
         I altered the flake.nix 'nixosConfiguration' attribute to be more 
