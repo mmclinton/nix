@@ -42,33 +42,5 @@
     home = "/home/mc";
     createHome = true;
     shell = pkgs.fish;
-    packages = with pkgs; [
-      brave 
-      discord
-      drawio 
-      fish
-      firefox 
-      go 
-      gopls 
-      ivpn 
-      ivpn-service 
-      kora-icon-theme 
-      miller 
-      neofetch
-      noisetorch 
-      popsicle 
-      protonmail-desktop 
-      python3
-      python311Packages.ipykernel 
-      python311Packages.jupyter-core 
-      python311Packages.ipython
-      syncthing 
-      tor-browser 
-      ulauncher 
-      virtualenv 
-      vscode-fhs 
-      wmctrl 
-      zoom-us
-    ];
   };
 }

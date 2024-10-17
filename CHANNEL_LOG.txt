@@ -14,10 +14,25 @@ Description:
 
 Key:
 -  COMMIT    : General commit information message
--  INITIAL : Initial commit
+-  INITIAL   : Initial commit
+-  NOTE      : A general purpose note
 
 START OF LOG ENTRIES
 --------------------------------------------------
+
+7079 - COMMIT
+    2024-10-17:
+        I resolved a package collision between cargo and rustup. In other words,
+        I am a noob who did not realize that rustup included the cargo tool. 
+        Also, I moved my all of my user packages found in configuration.nix to 
+        the new home.nix. This is a small step towards a larger goal of creating
+        a comprehensive home.nix configuration. 
+
+5350 - NOTE
+    2024-10-17:
+        Turns out, next check does not detect collisions between packages, it is
+        only going to check things like syntax and if it can be built in 
+        isolation. 
 
 5350 - COMMIT
     2024-10-17:
