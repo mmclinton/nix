@@ -10,12 +10,13 @@
     };
   };
 
-  outputs = { self, nixpkgs, ... }@inputs: {
+  outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
       default = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
+          inputs.home-manager.nixosModules.default
           ./nixos/configuration.nix
           ./nixos/modules/boot.nix
           ./nixos/modules/desktop.nix
@@ -30,7 +31,6 @@
           ./nixos/modules/services/avahi.nix
           ./nixos/modules/services/pipewire.nix
           ./nixos/modules/services/services-enable.nix
-          inputs.home-manager.nixosModules.default
         ];
       };
     };

@@ -43,4 +43,24 @@
     createHome = true;
     shell = pkgs.fish;
   };
+
+  programs.fish = {
+    enable = true;
+    shellAliases = {
+      temp-browser = "nix-shell -p chromium";
+      l = "ls -alh";
+      la = "ls -A";
+      ll = "ls -l";
+      ls = "ls --color=tty";
+      miller = "mlr --csv --opprint --barred head -n 5";
+      nv = "nvim";
+      quick-python = "nix-shell -p python311Packages.{ipython, polars}";
+    };
+    shellInit = ''
+      if status --is-interactive
+        set -U fish_greeting ""
+        set -x PATH $PATH ~/go/bin/
+      end
+    '';
+  };
 }

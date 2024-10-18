@@ -20,7 +20,15 @@ Key:
 START OF LOG ENTRIES
 --------------------------------------------------
 
-10537 - NOTE
+12266 - COMMIT
+    2024-10-18:
+        I have succumbed after many attempts to rectify the default shell
+        assignment via home-manager. I cannot get home-manager to set my default
+        shell to fish. In order to obtain a login shell of fish, I had to keep
+        my fish config within configuration.nix. This commit is largely me 
+        moving items around to accomplish this goal. 
+
+10537 - COMMIT
     2024-10-17:
         I finally got the home.nix to import and use the dotfiles/fish.nix file.
         That said, there was an error when building due to the order of
