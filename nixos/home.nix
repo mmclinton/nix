@@ -26,7 +26,6 @@
     python311Packages.ipykernel 
     python311Packages.jupyter-core 
     python311Packages.ipython
-    rustup
     syncthing 
     tor-browser 
     ulauncher 

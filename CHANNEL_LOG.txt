@@ -20,6 +20,14 @@ Key:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+13995 - COMMIT
+    2024-10-19:
+        I added gnome extensions. These are not enabled by default. Also, in an
+        attempt to make rust development smoother, and without error, I have 
+        added a development shell and an accompanying .toml file for rust in 
+        /modules/rust. I find this to be sub par and extremely confusing. I have
+        had issues with Openssl, and this is part of the attempt to circumvent. 
+
 12266 - COMMIT
     2024-10-18:
         I have succumbed after many attempts to rectify the default shell

@@ -16,11 +16,24 @@
     mailspring     # geary replacement
     mc             # gnome files replacement
     neovim         # nano replacement
+    pkg-config     # for rust program
     onlyoffice-bin # libre office replacement
     ripgrep
     unzip 
     wget 
     wl-clipboard
+
+    # Gnome Extensions (not enabled by default)
+    gnomeExtensions.appindicator
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.color-picker
+    gnomeExtensions.just-perfection
+    gnomeExtensions.astra-monitor
+    gnomeExtensions.caffeine
+    gnomeExtensions.quick-settings-audio-devices-hider
+    gnomeExtensions.quick-settings-audio-devices-renamer
+    gnomeExtensions.top-bar-organizer
+    gnomeExtensions.user-themes
   ];
 
   environment.gnome.excludePackages = (with pkgs; [gnome-tour]) 
