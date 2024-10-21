@@ -19,6 +19,14 @@ Key:
 
 START OF LOG ENTRIES
 --------------------------------------------------
+15724 - COMMIT
+    2024-10-20:
+        I added some basic configuration settings in home-manager. I also added
+        home-manager into my flake. This was primarily a test to see if I could
+        correctly configure some basic settings like icon themes, gtk themes,
+        etc. I also added video driver related settings in hardware. I added
+        graphics/gaming related settings like opengl, steam, and gamemode.
+        Almost all of them were simple 'enable = true' commands. 
 
 13995 - COMMIT
     2024-10-19:

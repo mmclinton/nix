@@ -25,6 +25,8 @@
           ./nixos/modules/system-packages.nix
           ./nixos/modules/hardware/audio.nix
           ./nixos/modules/hardware/networking.nix
+          ./nixos/modules/hardware/opengl.nix
+          ./nixos/modules/hardware/video-driver.nix
           ./nixos/modules/programs/bash.nix
           ./nixos/modules/programs/neovim.nix
           ./nixos/modules/programs/programs-enable.nix
@@ -32,6 +34,13 @@
           ./nixos/modules/services/pipewire.nix
           ./nixos/modules/services/services-enable.nix
         ];
+      };
+    };
+
+    homeConfigurations = {
+      mc = home-manager.lib.homeManagerConfiguration {
+        inherit inputs;
+        backupFileExtension = "hm-backup";
       };
     };
   };
