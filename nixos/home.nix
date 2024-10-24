@@ -30,15 +30,6 @@
     syncthing 
     wmctrl 
 
-    ######### Programming ########
-    go 
-    gopls 
-    python3
-    python311Packages.ipykernel 
-    python311Packages.jupyter-core 
-    python311Packages.ipython
-    virtualenv 
-
     ### Theme-related packages ###
     kora-icon-theme 
     andromeda-gtk-theme

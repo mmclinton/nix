@@ -54,8 +54,13 @@
       ls = "ls --color=tty";
       miller = "mlr --csv --opprint --barred head -n 5";
       nv = "nvim";
-      quick-python = "nix-shell -p python311Packages.{ipython, polars}";
+      python-shell = "nix-shell ~/nix/shells/python/shell.nix";
+      go-shell = "nix-shell ~/nix/shells/go/shell.nix";
+      rust-shell = "nix-shell ~/nix/shells/rust/shell.nix";
     };
+    interactiveShellInit = ''
+      ${pkgs.any-nix-shell}/bin/any-nix-shell fish --info-right | source
+    '';
     shellInit = ''
       if status --is-interactive
         set -U fish_greeting ""

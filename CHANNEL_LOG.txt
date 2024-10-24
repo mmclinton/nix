@@ -19,6 +19,16 @@ Key:
 
 START OF LOG ENTRIES
 --------------------------------------------------
+
+17453 - COMMIT
+    2024-10-23:
+        I removed user-space programming languages and dependencies to their own
+        respective shells configurations. Python, go, and rust each have their 
+        own nix-shell configs and aliases now. Also, I added a new package and
+        option for fish. Fish did not have a visual que for when you were in a 
+        nix-shell. This option and package allows for you to know when you are
+        in one now. 
+
 15724 - COMMIT
     2024-10-20:
         I added some basic configuration settings in home-manager. I also added
