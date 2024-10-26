@@ -17,8 +17,18 @@ Key:
 -  INITIAL   : Initial commit
 -  NOTE      : A general purpose note
 
+TODO:
+    1. vscode config files need to be uploaded and configured
+    2. grub/bootloader needs to be configured and customized
+    3. ensure compatibility with nix-shells and vscode
+
 START OF LOG ENTRIES
 --------------------------------------------------
+
+19182 - COMMIT
+    2024-10-24:
+        I added a Nixos-related banner to the README as well as a description.
+        Also, I added a package or two. 
 
 17453 - COMMIT
     2024-10-23:

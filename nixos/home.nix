@@ -23,6 +23,7 @@
 
     ########## Programs ##########
     fish
+    fzf
     ivpn 
     ivpn-service 
     miller 
@@ -31,8 +32,8 @@
     wmctrl 
 
     ### Theme-related packages ###
-    kora-icon-theme 
     andromeda-gtk-theme
+    kora-icon-theme 
   ];
 
   home.sessionVariables = {
