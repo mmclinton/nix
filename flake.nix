@@ -37,6 +37,7 @@
       };
     };
 
+    # I'm not sure this even does anything.
     homeConfigurations = {
       mc = home-manager.lib.homeManagerConfiguration {
         inherit inputs;

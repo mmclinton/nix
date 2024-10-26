@@ -33,6 +33,7 @@
     users = {
       "mc" = import ./home.nix;
     };
+    backupFileExtension = "hm-backup";
   };
 
   users.users.mc = {

@@ -40,6 +40,11 @@
     EDITOR = "neovim";
   };
 
+  home.file = {
+    ".config/kitty/kitty.conf".text = import ./modules/dotfiles/kitty/kitty-config.nix;
+    ".config/kitty/current-theme.conf".text = import ./modules/dotfiles/kitty/kitty-theme.nix;
+  };
+
   gtk = {
     enable = true;
     font.name = "Inter";

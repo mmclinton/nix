@@ -20,10 +20,23 @@ Key:
 TODO:
     1. vscode config files need to be uploaded and configured
     2. grub/bootloader needs to be configured and customized
-    3. ensure compatibility with nix-shells and vscode
+    3. ensure compatibility with nix-shells and vscode (currently testing)
 
 START OF LOG ENTRIES
 --------------------------------------------------
+
+20911 - COMMIT
+    2024-10-25:
+        I moved the 'home-manager.backupFileExtension' option to the 
+        configuration.nix file. It being in the flake was not resolving 
+        collisions correctly. I tested it in the config file and it worked 
+        perfectly. Also, I added some example 'home.file' options for testing. 
+        I allowed home-manager to place my kitty configurations where they 
+        belong. It works as intended, also. That said, it was not perfect. I 
+        noticed that I cannot modify my kitty theme using 'kitty +kittens theme'
+        to change themes. I must alter the file within my dotfiles dir in ~/nix.
+        Talk about annoying. I will keep experimenting with a fix. Future 
+        commits will be me placing additional files under the home.file option.
 
 19182 - COMMIT
     2024-10-24:
