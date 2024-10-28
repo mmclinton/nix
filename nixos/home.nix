@@ -42,13 +42,14 @@
 
   home.file = {
     ".config/kitty/kitty.conf".text = import ./modules/dotfiles/kitty/kitty-config.nix;
-    ".config/kitty/current-theme.conf".text = import ./modules/dotfiles/kitty/kitty-theme.nix;
+    ".config/kitty/onedark-pro.conf".text = import ./modules/dotfiles/kitty/themes/onedark-pro.nix;
+    ".config/kitty/github-dark.conf".text = import ./modules/dotfiles/kitty/themes/github-dark.nix;
   };
 
   gtk = {
     enable = true;
     font.name = "Inter";
-    iconTheme.name = "Kora";
+    # iconTheme.name = "Kora";
     theme.name = "Andromeda-gtk";
   };
 

@@ -19,11 +19,32 @@ Key:
 
 TODO:
     1. vscode config files need to be uploaded and configured
-    2. grub/bootloader needs to be configured and customized
-    3. ensure compatibility with nix-shells and vscode (currently testing)
+    2. ensure compatibility with nix-shells and vscode (currently testing)
+    3. Darwin needs to be configured and implemented
+    4. The remaining dotfiles need to be migrated into home-manager
+    5. Fix Kora icons not being set properly.
 
 START OF LOG ENTRIES
 --------------------------------------------------
+
+22640 - COMMIT
+    2024-10-27:
+        I completed the grub/bootloader task. We are now booting into grub 2 
+        with a custom catpuccin theme. I tested it out and it worked as it was
+        supposed to. Also, I added and moved some theme related files around. I
+        am in the process of slowly converting all of my dotfiles to nix files.
+        The only downside, that I can see, is that they are read only. The 
+        configs are applied, but only changed via the nix file. For instance, 
+        kitty cannot auto change your theme and update the default 
+        current-them.conf file. You must do so on your own fruition through the
+        nix file. That is the meat of this commit. 
+
+20911 - NOTE
+    2024-10-27:
+        Take note that the system icons, despite being set to "Kora", are not
+        being properly set, and are reverting upon every build switch. Maybe I 
+        will be able to reference the package itself? I am unsure since it has
+        variants. For now, I have commented out the theme. 
 
 20911 - COMMIT
     2024-10-25:

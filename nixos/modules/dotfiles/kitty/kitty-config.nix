@@ -20,6 +20,6 @@
 
   # BEGIN_KITTY_THEME
   # OneDark-Pro
-  include current-theme.conf
+  include github-dark.conf
   # END_KITTY_THEME
 ''
