@@ -27,6 +27,11 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+24369 - COMMIT
+    2024-11-02:
+        I created a new shell.nix and accompanying shell aliases for ruby and 
+        jekyll. These tools are to manage my personal website.
+
 22640 - COMMIT
     2024-10-27:
         I completed the grub/bootloader task. We are now booting into grub 2 

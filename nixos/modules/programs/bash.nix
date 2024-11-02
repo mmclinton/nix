@@ -13,6 +13,7 @@
       nv = "nvim";
       python-shell = "nix-shell ~/nix/shells/python/shell.nix";
       go-shell = "nix-shell ~/nix/shells/go/shell.nix";
+      ruby-shell = "nix-shell ~/nix/shells/ruby/ruby.nix";
       rust-shell = "nix-shell ~/nix/shells/rust/shell.nix";
     }; 
   };
