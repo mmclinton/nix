@@ -22,6 +22,7 @@
     zoom-us
 
     ########## Programs ##########
+    bat
     fish
     fzf
     ivpn 
@@ -48,8 +49,8 @@
 
   gtk = {
     enable = true;
-    font.name = "Inter";
-    # iconTheme.name = "Kora";
+    font.name = "Inter Regular";
+    iconTheme.name= "kora-pgrey";
     theme.name = "Andromeda-gtk";
   };
 

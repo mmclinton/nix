@@ -27,6 +27,11 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+26098 - COMMIT
+    2024-11-03:
+        I added a few basic packages for a better terminal experience. These
+        include "bat", "figlet", and "chafa".
+
 24369 - COMMIT
     2024-11-02:
         I created a new shell.nix and accompanying shell aliases for ruby and 
