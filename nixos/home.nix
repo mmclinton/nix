@@ -23,6 +23,8 @@
 
     ########## Programs ##########
     bat
+    chafa
+    figlet
     fish
     fzf
     ivpn 
