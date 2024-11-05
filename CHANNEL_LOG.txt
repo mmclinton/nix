@@ -27,6 +27,15 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+29556 - NOTE
+    2024-11-05:
+        I submitted another commit under the same name to correct the pull
+        request that was made with a message not adhering to the standard that
+        I have been using. I created a new branch when reaching out to the
+        Nixos community for help. When I merged it, it was named differently
+        than normal. Thus, I am submitting another commit under 29556 by 
+        simply adding an extra space on each affected file. 
+
 29556 - COMMIT
     2024-11-05:
         In an attempt to reconcile and error I was receiving when attempting to 

@@ -32,6 +32,7 @@
     gnomeExtensions.caffeine
     gnomeExtensions.quick-settings-audio-devices-hider
     gnomeExtensions.quick-settings-audio-devices-renamer
+    gnomeExtensions.simple-timer
     gnomeExtensions.top-bar-organizer
     gnomeExtensions.user-themes
   ];
