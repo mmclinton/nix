@@ -27,6 +27,16 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+29556 - COMMIT
+    2024-11-05:
+        In an attempt to reconcile and error I was receiving when attempting to 
+        invoke the nix flake update command followed by the rebuild switch 
+        command, I am making this commit. It is untested. I am committing it 
+        because I cannot  be certain if the dirty git tree is interfering with 
+        the ability to udpate the flake. A note will be posted if updating the 
+        flake and committing the changes does not resolve the error I am having
+        with the ivpn packages. 
+
 27827 - COMMIT
     2024-11-04:
         I updated the license to a GLWTS license which aligns better overall

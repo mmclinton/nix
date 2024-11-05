@@ -8,7 +8,6 @@
   services = {
     flatpak.enable = true;
     gnome.gnome-keyring.enable = true;
-    ivpn.enable = true;
     printing.enable = true;
   };
 }
