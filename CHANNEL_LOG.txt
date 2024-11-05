@@ -27,6 +27,11 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+27827 - COMMIT
+    2024-11-04:
+        I updated the license to a GLWTS license which aligns better overall
+        with the project's goals and mission statement.
+
 26098 - COMMIT
     2024-11-03:
         I added a few basic packages for a better terminal experience. These
