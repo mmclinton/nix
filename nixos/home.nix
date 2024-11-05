@@ -27,8 +27,6 @@
     figlet
     fish
     fzf
-    ivpn 
-    ivpn-service 
     miller 
     neofetch
     syncthing 
