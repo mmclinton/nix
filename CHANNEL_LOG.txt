@@ -27,6 +27,12 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+31285 - COMMIT
+    2024-11-08:
+        I updated the flake. Despite a merged PR for 'ivpn-service', it does
+        not build for me. I am without ivpn until then. The pr was to build 
+        ivpn with go 1.22 instead of go 1.23 where --replace is deprecated.
+
 29556 - NOTE
     2024-11-05:
         I submitted another commit under the same name to correct the pull
