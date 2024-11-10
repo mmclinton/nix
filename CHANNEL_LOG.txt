@@ -18,14 +18,22 @@ Key:
 -  NOTE      : A general purpose note
 
 TODO:
-    1. vscode config files need to be uploaded and configured
-    2. ensure compatibility with nix-shells and vscode (currently testing)
+    1. [WIP] vscode config files need to be uploaded and configured
+    2. [DONE] ensure compatibility with nix-shells and vscode (currently testing)
     3. Darwin needs to be configured and implemented
     4. The remaining dotfiles need to be migrated into home-manager
-    5. Fix Kora icons not being set properly.
+    5. [DONE] Fix Kora icons not being set properly.
 
 START OF LOG ENTRIES
 --------------------------------------------------
+
+33014 - COMMIT
+    2024-11-09:
+        Per the recommendation of a Nixos contributor in Discord, I have 
+        changed the name of my config to "nimbus" from "default" to allow for
+        personalization between devices. Right now, there is only one host, 
+        but eventually I will add my macos config. I also added some vscode 
+        related nix files. These were my user settings and my favorite theme.
 
 31285 - COMMIT
     2024-11-08:

@@ -12,7 +12,7 @@
 
   outputs = { self, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations = {
-      default = nixpkgs.lib.nixosSystem {
+      nimbus = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
         specialArgs = { inherit inputs; };
         modules = [
@@ -37,7 +37,6 @@
       };
     };
 
-    # I'm not sure this even does anything.
     homeConfigurations = {
       mc = home-manager.lib.homeManagerConfiguration {
         inherit inputs;
