@@ -24,6 +24,7 @@
     ########## Programs ##########
     bat
     chafa
+    cron
     figlet
     fish
     fzf

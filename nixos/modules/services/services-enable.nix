@@ -6,6 +6,7 @@
 {
   security.rtkit.enable = true; # pulseaudio uses this service to acquire realtime priority
   services = {
+    cron.enable = true;
     flatpak.enable = true;
     gnome.gnome-keyring.enable = true;
     printing.enable = true;

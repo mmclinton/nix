@@ -27,6 +27,15 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+34743 - COMMIT
+    2024-11-13:
+        I updated my rust-shell to properly configure a dependency I was using,
+        openssl. I was having issues where pkg-config was not properly finding
+        it, so I added explicit paths and instructions in the rust shell file. 
+        Also, I added the cron package to my config. Last but not least, I added
+        an alias to my nixos configuration to my flake.nix file, replacing 
+        'default' with 'nimbus'.
+
 33014 - COMMIT
     2024-11-09:
         Per the recommendation of a Nixos contributor in Discord, I have 
