@@ -27,6 +27,16 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+36472 - COMMIT
+    2024-11-25:
+        I updated my rust-shell configuration. I simplified the configuration a
+        bit. I was struggling to build my 'fomc-archiver' project, and after a 
+        lot of tinkering, I have discovered that in the shell hook, calling 
+        'exec fish' was somehow messing with my rust builds. I removed that and
+        all works fine. I also removed some openssl related items in favor of 
+        the recommmended ones on the Nixos wiki. I have not had to build 
+        anything that depends on openssl, so only time will tell. 
+
 34743 - COMMIT
     2024-11-13:
         I updated my rust-shell to properly configure a dependency I was using,
