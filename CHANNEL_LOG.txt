@@ -28,6 +28,12 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+38201 - COMMIT
+    2024-11-26:
+        Why the hell was my path '~/go/bin/'? I changed that to be something 
+        more typical like '/usr/local/bin/'. I noticed this when working on my
+        fomc-archiver project. I cannot reason how this happened, but its fixed.
+
 36472 - CORRECTION
     2024-11-26:
         I forgot to add a ';' to the previous commit for the fomc fish alias.
