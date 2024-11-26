@@ -13,9 +13,10 @@ Description:
     reference and auditing.
 
 Key:
--  COMMIT    : General commit information message
--  INITIAL   : Initial commit
--  NOTE      : A general purpose note
+-  CORRECTION : A basic correction of a previous commit
+-  COMMIT     : General commit information message
+-  INITIAL    : Initial commit
+-  NOTE       : A general purpose note
 
 TODO:
     1. [WIP] vscode config files need to be uploaded and configured
@@ -26,6 +27,10 @@ TODO:
 
 START OF LOG ENTRIES
 --------------------------------------------------
+
+36472 - CORRECTION
+    2024-11-26:
+        I forgot to add a ';' to the previous commit for the fomc fish alias.
 
 36472 - COMMIT
     2024-11-25:

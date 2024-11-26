@@ -59,7 +59,7 @@
       go-shell = "nix-shell ~/nix/shells/go/shell.nix";
       ruby-shell = "nix-shell ~/nix/shells/ruby/ruby.nix";
       rust-shell = "nix-shell ~/nix/shells/rust/shell.nix";
-      fomc = "/usr/local/bin/fomc"
+      fomc = "/usr/local/bin/fomc";
     };
     interactiveShellInit = ''
       ${pkgs.any-nix-shell}/bin/any-nix-shell fish --info-right | source
