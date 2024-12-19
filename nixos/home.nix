@@ -56,8 +56,8 @@
   };
 
   xdg.mimeApps.defaultApplications = {
-    "x-scheme-handler/http" = "floorp.desktop";
-    "x-scheme-handler/https" = "floorp.desktop";
+    "x-scheme-handler/http" = "brave-browser.desktop";
+    "x-scheme-handler/https" = "brave-browser.desktop";
     "x-scheme-handler/mailto" = "proton-mail.desktop";
   };
 

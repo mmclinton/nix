@@ -71,4 +71,21 @@
       end
     '';
   };
+  systemd.user.services.noisetorch = {
+    enable = true;
+    description = "Noisetorch with the Blue Microphone as the input source";
+    after = [ "graphical-session.target" "alsa-restore.service" "pulseaudio.service" ];
+    partOf = ["graphical-session.target"];
+    wantedBy = [ "default.target" ];
+
+    serviceConfig = {
+      ExecStartPre = "/run/current-system/sw/bin/bash -c 'until [ -e /dev/snd/pcmC1D0p ]; do sleep 1; done'";
+      ExecStart = "noisetorch -i alsa_input.usb-Generic_Blue_Microphones_LT_2104131720559D010506_111000-00.analog-stereo";
+      Type = "simple";
+      Restart = "always";
+      Environment = "DISPLAY=:0";
+      StandardOutput = "journal";
+      StandardError = "journal";
+    };
+  };
 }

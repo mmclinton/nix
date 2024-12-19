@@ -20,13 +20,15 @@ Key:
 
 TODO:
     1. [WIP] vscode config files need to be uploaded and configured
-    2. [DONE] ensure compatibility with nix-shells and vscode (currently testing)
     3. Darwin needs to be configured and implemented
     4. The remaining dotfiles need to be migrated into home-manager
-    5. [DONE] Fix Kora icons not being set properly.
 
 START OF LOG ENTRIES
 --------------------------------------------------
+
+39930 - COMMIT
+    2024-12-18:
+        I updated the flake packages. I also created a systemd login service.
 
 38201 - COMMIT
     2024-11-26:
