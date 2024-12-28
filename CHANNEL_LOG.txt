@@ -26,6 +26,12 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+41659 - COMMIT
+    2024-12-27:
+        I added the gnumeric package for easy xls to csv conversion using thier
+        ssconvert tool. I also added some default python packages that I use 
+        regularly. 
+
 39930 - COMMIT
     2024-12-18:
         I updated the flake packages. I also created a systemd login service.

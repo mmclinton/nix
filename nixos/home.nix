@@ -1,6 +1,7 @@
 { config, pkgs, ... }:
 
 {
+
   nixpkgs.config.allowUnfree = true;
 
   home.username = "mc";
@@ -13,6 +14,7 @@
     discord
     drawio 
     firefox 
+    gnumeric
     noisetorch 
     popsicle 
     protonmail-desktop 
