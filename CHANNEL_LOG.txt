@@ -20,11 +20,19 @@ Key:
 
 TODO:
     1. [WIP] vscode config files need to be uploaded and configured
+    2. Set Berkley font as default. 
     3. Darwin needs to be configured and implemented
     4. The remaining dotfiles need to be migrated into home-manager
 
 START OF LOG ENTRIES
 --------------------------------------------------
+
+43388 - COMMIT
+    2025-01-03:
+        I updated the flake packages. I also changed the default font on kitty
+        and the system to be the Berkley Mono Typface. This font is not a 
+        package from the Nix repo, so I am not sure how to set it as a user
+        default yet.
 
 41659 - COMMIT
     2024-12-27:
