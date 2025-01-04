@@ -33,6 +33,7 @@
     miller 
     neofetch
     syncthing 
+    tree
     wmctrl 
 
     ### Theme-related packages ###

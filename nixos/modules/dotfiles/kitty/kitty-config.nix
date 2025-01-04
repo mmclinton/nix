@@ -13,10 +13,10 @@
 
   # Font
   font_size 13.0
-  font_family      JetBrains Mono Medium
-  bold_font        JetBrains Mono Bold
-  italic_font      JetBrains Mono Italic
-  bold_italic_font JetBrains Mono Bold Italic
+  font_family      TX-02-Regular
+  bold_font        TX-02-Bold
+  italic_font      TX-02-Oblique
+  bold_italic_font TX-02-Bold-Oblique
 
   # BEGIN_KITTY_THEME
   # OneDark-Pro
