@@ -1,0 +1,9 @@
+Upon a fresh install of Nixos, many desirables have yet to be implemented in a
+declarative way. For now, here is a short list of things to be manually
+configured. I will add to it as I remember them.
+
+01. Set git global params
+02. Download Berkeley Mono and create `/etc/nixos/berkeley-mono/` for the font
+        defaults to properly set. Upon install, Jetbrains Mono will be active
+        until Berkeley Mono is downloaded.
+03. 

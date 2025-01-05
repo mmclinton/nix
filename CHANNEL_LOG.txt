@@ -27,6 +27,10 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+45117 - COMMIT
+    2025-01-04:
+        I altered my kitty configuration and added performance related options.
+
 43388 - COMMIT
     2025-01-03:
         I updated the flake packages. I also changed the default font on kitty
