@@ -27,6 +27,10 @@ TODO:
 START OF LOG ENTRIES
 --------------------------------------------------
 
+46846 - COMMIT
+    2025-01-06:
+        I altered the README banner art. 
+
 45117 - COMMIT
     2025-01-04:
         I altered my kitty configuration and added performance related options.
