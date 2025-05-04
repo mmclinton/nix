@@ -2,7 +2,6 @@
 
 pkgs.mkShell {
   buildInputs = with pkgs; [
-    pypy
     python3
     python312Packages.beautifulsoup4
     python312Packages.ipykernel 

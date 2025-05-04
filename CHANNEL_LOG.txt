@@ -22,10 +22,16 @@ TODO:
     1. [WIP] vscode config files need to be uploaded and configured
     2. Set Berkley font as default. 
     3. Darwin needs to be configured and implemented
-    4. The remaining dotfiles need to be migrated into home-manager
+    4. [WIP] The remaining dotfiles need to be migrated into home-manager
 
 START OF LOG ENTRIES
 --------------------------------------------------
+
+48575 - COMMIT
+    2025-05-04:
+        I updated my flake. I added a vscode theme, some system settings, and 
+        removed pypy due to a dependency conflict. The vscode theme was manually 
+        added because it is no longer available in the store.
 
 46846 - COMMIT
     2025-01-06:
