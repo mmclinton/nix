@@ -1,26 +1,23 @@
 { config, pkgs, ... }:
 
 {
-
-  nixpkgs.config.allowUnfree = true;
-
   home.username = "mc";
   home.homeDirectory = "/home/mc";
-  home.stateVersion = "24.05"; 
-  home.packages = with pkgs; [
+  home.stateVersion = "24.05";
 
+  home.packages = with pkgs; [
     ######## Applications ########
-    brave 
+    brave
     discord
-    drawio 
-    firefox 
+    drawio
+    firefox
     gnumeric
-    noisetorch 
-    popsicle 
-    protonmail-desktop 
-    tor-browser 
-    ulauncher 
-    vscode-fhs 
+    noisetorch
+    popsicle
+    protonmail-desktop
+    tor-browser
+    ulauncher
+    vscode-fhs
     zoom-us
 
     ########## Programs ##########
@@ -30,15 +27,15 @@
     figlet
     fish
     fzf
-    miller 
+    miller
     neofetch
-    syncthing 
+    syncthing
     tree
-    wmctrl 
+    wmctrl
 
     ### Theme-related packages ###
     andromeda-gtk-theme
-    kora-icon-theme 
+    kora-icon-theme
   ];
 
   home.sessionVariables = {
@@ -54,7 +51,7 @@
   gtk = {
     enable = true;
     font.name = "Inter Regular";
-    iconTheme.name= "kora-pgrey";
+    iconTheme.name = "kora-pgrey";
     theme.name = "Andromeda-gtk";
   };
 
@@ -64,7 +61,6 @@
     "x-scheme-handler/mailto" = "proton-mail.desktop";
   };
 
-  # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 }
 

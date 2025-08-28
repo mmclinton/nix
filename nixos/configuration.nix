@@ -1,17 +1,9 @@
-#------------------------------------------------------------------------------#
-#                                                                              #
-#                  My system configuration for NixOS devices                   #
-#                                                                              #
-#------------------------------------------------------------------------------#
 
+{ config, pkgs, ... }:
 
-#------------------------------- Nix Settings ---------------------------------#
-
-{ config, pkgs, inputs, ... }: {
-
-  imports = [ 
-    ./hardware-configuration.nix 
-    inputs.home-manager.nixosModules.default
+{
+  imports = [
+    ./hardware-configuration.nix
   ];
 
   nix.settings = {
@@ -19,22 +11,7 @@
     experimental-features = [ "nix-command" "flakes" ];
   };
 
-  nixpkgs.config = {
-    allowUnfree = true;
-    permittedInsecurePackages = [ "mailspring-1.12.0" ];
-  };
-
   system.stateVersion = "23.11";
-
-#----------------------------- User Configuration -----------------------------#
-
-  home-manager = {
-    extraSpecialArgs = { inherit inputs; };
-    users = {
-      "mc" = import ./home.nix;
-    };
-    backupFileExtension = "hm-backup";
-  };
 
   users.users.mc = {
     isNormalUser = true;
@@ -59,7 +36,6 @@
       go-shell = "nix-shell ~/nix/shells/go/shell.nix";
       ruby-shell = "nix-shell ~/nix/shells/ruby/ruby.nix";
       rust-shell = "nix-shell ~/nix/shells/rust/shell.nix";
-      #fomc = "/usr/local/bin/fomc";
     };
     interactiveShellInit = ''
       ${pkgs.any-nix-shell}/bin/any-nix-shell fish --info-right | source
@@ -71,6 +47,7 @@
       end
     '';
   };
+
   systemd.user.services.noisetorch = {
     enable = true;
     description = "Noisetorch with the Blue Microphone as the input source";
@@ -89,3 +66,4 @@
     };
   };
 }
+
